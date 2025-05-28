@@ -52,10 +52,10 @@ import { ThemeProvider } from "next-themes";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Integrative Oncology Webinar Series | New Roots Herbal",
+  title: "Integrative Oncology Series",
   description:
     "Join our expert-led webinar series on integrative approaches to oncology, featuring leading naturopathic doctors and researchers.",
-  generator: "v0.dev",
+  generator: "Saloni",
 };
 
 export default function RootLayout({
