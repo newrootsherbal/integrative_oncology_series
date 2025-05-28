@@ -309,7 +309,7 @@ export const webinars: Webinar[] = [
 
 export const faqs: FAQ[] = [
   {
-    question: "What makes this webinar series different from other lectures?",
+    question: ":How is this series distinct from other integrative medicine webinars?",
     answer:
       "This CE-based webinar series integrates core oncology concepts with practical clinical application. It reviews cancer pathophysiology—highlighting angiogenesis, immune function, and their relevance in integrative care—then applies this knowledge to common patient concerns around natural products and lifestyle choices during and after conventional treatment. It explores evidence-informed approaches  helping clinicians translate science into effective, patient-centered care.",
   },
@@ -319,7 +319,7 @@ export const faqs: FAQ[] = [
       "NDs and integrative practitioners in general practice aim to support the whole person, not just the diagnosis. This series focuses on helping patients with a cancer diagnosis optimize their overall health and well-being, rather than offering direct cancer treatment. Cancer patients often have distinct needs that require informed, compassionate care. This series is designed to make you an 'oncology-informed' provider. Our expert panel will address the most common questions that arise in primary care, equipping you with the knowledge and tools to confidently support your patients through every stage of their journey.",
   },
   {
-    question: "What is the role of NFH and Vitazan in leading this series?",
+    question: "Why have NFH and Vitazan chosen to spearhead this series?",
     answer:
       "This series is led by experts in integrative oncology with naturopathic training and clinical experience in supportive cancer care. Developed with the recognition that many primary and integrative providers encounter oncology patients, the program offers essential, evidence-informed guidance for delivering compassionate, whole-person care. NFH and Vitazan are manufacturers of professional-grade natural health products, committed to quality, research, and clinical collaboration. Our goal is to advance the evidence-based use of natural products within integrative and naturopathic medicine.",
   },
