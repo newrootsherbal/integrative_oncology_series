@@ -319,9 +319,9 @@ export const faqs: FAQ[] = [
       "NDs and integrative practitioners in general practice aim to support the whole person, not just the diagnosis. This series focuses on helping patients with a cancer diagnosis optimize their overall health and well-being, rather than offering direct cancer treatment. Cancer patients often have distinct needs that require informed, compassionate care. This series is designed to make you an 'oncology-informed' provider. Our expert panel will address the most common questions that arise in primary care, equipping you with the knowledge and tools to confidently support your patients through every stage of their journey.",
   },
   {
-    question: "Why are NFH and Vitazan leading this series?",
+    question: "What is the role of NFH and Vitazan in leading this series?",
     answer:
-      "Our panel of experts brings extensive experience in integrative oncology through their naturopathic training and focus, having worked with numerous patients and observed clinical responses to supportive care. This series was developed with the understanding that primary and holistic health care providers will encounter cancer patients in their practice. Our experts are here to provide valuable education and peer support to help guide practitioners in offering informed and compassionate care. NFH and Vitazan are a manufacturer of premium, professional grade natural products that are trusted by health care providers because of our quality manufacturing, evidence-backed research, and clinical working group. We are interested in the advancement of the clinical benefits of natural products in integrative and naturopathic medicine.",
+      "This series is led by experts in integrative oncology with naturopathic training and clinical experience in supportive cancer care. Developed with the recognition that many primary and integrative providers encounter oncology patients, the program offers essential, evidence-informed guidance for delivering compassionate, whole-person care. NFH and Vitazan are manufacturers of professional-grade natural health products, committed to quality, research, and clinical collaboration. Our goal is to advance the evidence-based use of natural products within integrative and naturopathic medicine.",
   },
   {
     question: "Will recordings be available if I can't attend live?",
