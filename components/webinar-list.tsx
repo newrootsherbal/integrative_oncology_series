@@ -17,9 +17,9 @@ const WebinarList = () => {
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.7 }}
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-2 text-center text-gray-800">Free Webinar Series</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-2 text-center text-gray-800">Schedule</h2>
           <p className="text-lg text-gray-600 mb-12 text-center max-w-3xl mx-auto">
-            Join our expert naturopathic doctors from June to October for insightful discussions on integrative oncology
+            Join our expert naturopathic doctors from September 2025 to February 2026 for insightful discussions on integrative oncology
             approaches. All webinars are completely free and open to everyone.
           </p>
         </motion.div>
@@ -76,9 +76,9 @@ const WebinarList = () => {
                               <h4 className="font-bold text-gray-800">
                                 {speaker.name}, {speaker.credentials}
                               </h4>
-                              <p className="text-emerald-600 text-sm font-medium mb-2">{speaker.title}</p>
+                              {/* <p className="text-emerald-600 text-sm font-medium mb-2">{speaker.title}</p> */}
                               <p className="text-sm text-gray-600 line-clamp-2">{speaker.bio}</p>
-                              <p className="text-xs text-emerald-700 mt-2 font-medium">Research: {speaker.research}</p>
+                              {/* <p className="text-xs text-emerald-700 mt-2 font-medium">Research: {speaker.research}</p> */}
                             </div>
                           </div>
                         )}

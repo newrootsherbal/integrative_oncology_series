@@ -9,28 +9,107 @@ export default function Home() {
     <main className="min-h-screen">
       <HeroBanner />
 
-      <section id="about" className="container py-16 md:py-24">
+      <section id="about" className="container  md:py-24">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-800">About the Webinar Series</h2>
-            <p className="text-lg text-gray-600 mb-6">
-              Join us for an enlightening series of{" "}
-              <span className="font-semibold text-emerald-600">free webinars</span> focused on integrative approaches to
-              oncology. Our expert naturopathic doctors will share valuable insights on complementary therapies,
-              nutritional support, and evidence-based natural approaches to cancer care.
-            </p>
+            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-gray-800">About the Webinar Series</h2>
+
+            <ul className="space-y-5 mb-8">
+              <li className="flex items-start">
+                <div className="mr-3 mt-1 bg-emerald-100 text-emerald-600 rounded-full p-1">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </div>
+                <p className="text-lg text-gray-600">
+                  <span className="font-semibold">Advance your practice</span> with oncology-informed adjunctive care
+                </p>
+              </li>
+              <li className="flex items-start">
+                <div className="mr-3 mt-1 bg-emerald-100 text-emerald-600 rounded-full p-1">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </div>
+                <p className="text-lg text-gray-600">
+                  <span className="font-semibold">Gain the skills</span> to support cancer survivors effectively
+                </p>
+              </li>
+              <li className="flex items-start">
+                <div className="mr-3 mt-1 bg-emerald-100 text-emerald-600 rounded-full p-1">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </div>
+                <p className="text-lg text-gray-600">
+                  <span className="font-semibold">Implement leading-edge strategies</span> for cancer prevention
+                </p>
+              </li>
+              <li className="flex items-start">
+                <div className="mr-3 mt-1 bg-emerald-100 text-emerald-600 rounded-full p-1">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </div>
+                <p className="text-lg text-gray-600">
+                  <span className="font-semibold">Learn directly</span> from experts in integrative oncology
+                </p>
+              </li>
+            </ul>
+
             <p className="text-lg text-gray-600 mb-8">
-              Each session provides healthcare practitioners and interested individuals with cutting-edge research and
-              practical applications in the field of integrative oncology.{" "}
-              <span className="font-semibold">No prior knowledge required - everyone is welcome!</span>
+              Join us for the highly anticipated <span style={{ color: "#0a3371" }} className="font-semibold">second edition</span>,
+              featuring five renowned experts each delivering a powerful one-hour lecture. 
             </p>
-            <Button asChild size="lg" className="bg-emerald-600 hover:bg-emerald-700">
-              <Link href="#webinars">View Webinars</Link>
-            </Button>
+            <p  className="text-lg text-gray-600 mb-8">
+              <span style={{ color: "#0a3371" }} className="font-semibold"> Reserve your spot today</span>, save the date, and come ready with your questions—this is your chance to learn directly from leaders in the
+              field. 
+            </p>
+          
           </div>
           <div className="relative rounded-xl overflow-hidden shadow-xl">
             <img
-              src="/placeholder-aj0sr.png"
+              src="/herobanner.jpg"
               alt="Healthcare professionals discussing integrative oncology approaches"
               className="w-full h-auto rounded-xl"
             />
@@ -41,8 +120,8 @@ export default function Home() {
       <WebinarList />
 
       <FaqPreview />
-
-      <section className="container py-16 md:py-24">
+{/* 
+      <section className="container ">
         <div className="bg-emerald-50 rounded-2xl p-8 md:p-12 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-emerald-800">
             Ready to Join Our Free Webinar Series?
@@ -52,11 +131,11 @@ export default function Home() {
             naturopathic doctors and enhance your knowledge of complementary cancer care approaches - completely free of
             charge.
           </p>
-          <Button size="lg" className="bg-emerald-600 hover:bg-emerald-700">
+          <Button className="bg-emerald-600 hover:bg-emerald-700 px-8 py-4 text-lg">
             Register Free
           </Button>
         </div>
-      </section>
+      </section> */}
     </main>
   )
 }

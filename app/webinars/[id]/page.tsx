@@ -1,4 +1,5 @@
 import { webinars, getSpeakerByWebinarId } from "@/lib/data"
+// import { getWebinars, getSpeakerByWebinarId } from "@/lib/data"
 import { Button } from "@/components/ui/button"
 import { Calendar, Clock, ArrowLeft } from "lucide-react"
 import Link from "next/link"
@@ -10,7 +11,7 @@ export function generateStaticParams() {
   }))
 }
 
-export function generateMetadata({ params }: { params: { id: string } }) {
+export async function generateMetadata({ params }: { params: { id: string } }) {
   const webinar = webinars.find((w) => w.id === params.id)
 
   if (!webinar) {
@@ -25,7 +26,7 @@ export function generateMetadata({ params }: { params: { id: string } }) {
   }
 }
 
-export default function WebinarPage({ params }: { params: { id: string } }) {
+export default async function WebinarPage({ params }: { params: { id: string } }) {
   const webinar = webinars.find((w) => w.id === params.id)
 
   if (!webinar) {

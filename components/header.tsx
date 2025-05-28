@@ -26,15 +26,15 @@ const Header = () => {
   return (
     <header
       className={`sticky top-0 z-50 w-full transition-all duration-300 ${
-        isScrolled ? "bg-white shadow-md py-2" : "bg-white/80 backdrop-blur-sm py-4"
+        isScrolled ? "bg-white shadow-md py-1" : "bg-white/80 backdrop-blur-sm py-2"
       }`}
     >
       <div className="container flex items-center justify-between">
-        <Link href="/" className="flex items-center">
+        <Link href="https://nfh.ca/" target="_blank" className="flex items-center">
           <motion.img
-            src="/placeholder-l6kbx.png"
+            src="/NFH x Vitazan.png"
             alt="New Roots Herbal"
-            className="h-10"
+            className="h-16"
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
@@ -46,15 +46,33 @@ const Header = () => {
           <Link href="/" className="text-gray-700 hover:text-emerald-600 font-medium transition-colors">
             Home
           </Link>
-          <Link href="/#webinars" className="text-gray-700 hover:text-emerald-600 font-medium transition-colors">
-            Webinars
-          </Link>
-          <Link href="/faq" className="text-gray-700 hover:text-emerald-600 font-medium transition-colors">
+          <Link href="/#faq" className="text-gray-700 hover:text-emerald-600 font-medium transition-colors">
             FAQ
           </Link>
           <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-            <Button className="bg-emerald-600 hover:bg-emerald-700">Register</Button>
+           <Button
+            style={{ backgroundColor: "#90b73e" }}
+            className="hover:opacity-90 text-white"
+          >
+          <Link href="/#webinars" className="text-gray-700 hover:text-white-800 font-medium transition-colors">
+                      Webinars
+                    </Link>
+          </Button>
+
           </motion.div>
+          {/* <Link href="/#webinars" className="text-gray-700 hover:text-emerald-600 font-medium transition-colors">
+            Webinars
+          </Link> */}
+          
+          {/* <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+           <Button
+  style={{ backgroundColor: "#90b73e" }}
+  className="hover:opacity-90 text-white"
+>
+  Register
+</Button>
+
+          </motion.div> */}
         </nav>
 
         {/* Mobile Menu Button */}
