@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Facebook, Twitter, Instagram, Mail, Phone } from "lucide-react"
+import { Facebook, Twitter, Instagram, Mail, Phone, Linkedin } from "lucide-react"
 
 const Footer = () => {
   return (
@@ -54,13 +54,13 @@ const Footer = () => {
               </li>
               <li>
                 <div className="flex space-x-4">
-              <a href="#" className="text-gray-800 hover:text-white transition-colors" aria-label="Facebook">
+              <a href="https://www.facebook.com/Nutritional-Fundamentals-for-Health-Inc-935117029962456/" target="_blank" className="text-gray-800 hover:text-white transition-colors" aria-label="Facebook">
                 <Facebook className="h-5 w-5" />
               </a>
-              <a href="#" className="text-gray-800 hover:text-white transition-colors" aria-label="Twitter">
-                <Twitter className="h-5 w-5" />
+              <a href="https://www.linkedin.com/company/nfh-inc" className="text-gray-800 hover:text-white transition-colors" target="_blank"  aria-label="LinkedIn">
+                <Linkedin className="h-5 w-5" />
               </a>
-              <a href="#" className="text-gray-800 hover:text-white transition-colors" aria-label="Instagram">
+              <a href="https://www.instagram.com/nfh.supplements/" className="text-gray-800 hover:text-white transition-colors" target="_blank" aria-label="Instagram">
                 <Instagram className="h-5 w-5" />
               </a>
             </div>

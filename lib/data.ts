@@ -311,12 +311,12 @@ export const faqs: FAQ[] = [
   {
     question: "What makes this webinar series different from other lectures?",
     answer:
-      "This webinar series is designed to provide comprehensive knowledge across various aspects of a specific topic within a CE-based and therapeutic-focused format. The CE-based portion offers an in-depth exploration of oncology fundamentals, serving as a refresher on the basics of cancer pathophysiology, including key concepts like angiogenesis, immune health, and their clinical relevance in integrative practice. The therapeutics-focused portion aims to translate this scientific knowledge into practical applications within a clinical setting. It addresses common patient questions about natural product use and lifestyle behaviors during and after conventional cancer treatments",
+      "This CE-based webinar series integrates core oncology concepts with practical clinical application. It reviews cancer pathophysiology—highlighting angiogenesis, immune function, and their relevance in integrative care—then applies this knowledge to common patient concerns around natural products and lifestyle choices during and after conventional treatment. It explores evidence-informed approaches  helping clinicians translate science into effective, patient-centered care.",
   },
   {
-    question: "Why would the series help me if I do not see patients with cancer?",
+    question: "Even if I don’t see cancer patients, how could this series benefit my clinical approach?",
     answer:
-      "NDs and integrative practitioners with a general practice strive to support patients holistically, considering the whole person rather than just the diagnosis. This series emphasizes guiding and supporting patients with a cancer diagnosis in their overall health and well-being, rather than directly treating cancer. Recognizing that cancer patients have unique needs requiring specific knowledge from their providers, this series aims to equip you with the essential insights needed to be ‘oncology-informed.’ Our panel of experts will address the most common questions encountered in primary care, empowering you with the tools and understanding to better support your patients on their journey.",
+      "NDs and integrative practitioners in general practice aim to support the whole person, not just the diagnosis. This series focuses on helping patients with a cancer diagnosis optimize their overall health and well-being, rather than offering direct cancer treatment. Cancer patients often have distinct needs that require informed, compassionate care. This series is designed to make you an 'oncology-informed' provider. Our expert panel will address the most common questions that arise in primary care, equipping you with the knowledge and tools to confidently support your patients through every stage of their journey.",
   },
   {
     question: "Why are NFH and Vitazan leading this series?",
