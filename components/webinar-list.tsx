@@ -90,7 +90,7 @@ const WebinarList = () => {
                             Details <ChevronRight className="ml-1 h-4 w-4" />
                           </Link>
                         </Button>
-                        <Button className="bg-emerald-600 hover:bg-emerald-700">Register Free</Button>
+                        <Button className="bg-emerald-600 hover:bg-emerald-700">Register Now</Button>
                       </CardFooter>
                     </div>
                   </div>

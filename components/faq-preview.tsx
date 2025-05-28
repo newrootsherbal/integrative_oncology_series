@@ -41,7 +41,7 @@ const FaqPreview = () => {
         </Accordion>
       </motion.div>
 
-      <motion.div
+      {/* <motion.div
         className="text-center mt-12"
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -51,7 +51,7 @@ const FaqPreview = () => {
         <Button asChild size="lg" variant="outline">
           <Link href="/faq">View All FAQs</Link>
         </Button>
-      </motion.div>
+      </motion.div> */}
     </section>
   )
 }
