@@ -24,7 +24,7 @@ const RotatingText = () => {
   }, [])
 
   return (
-    <div className="h-[3.5rem] md:h-[1.5rem] relative overflow-hidden">
+    <div className="h-[3.5rem] md:h-[1.5rem] relative ">
       <AnimatePresence mode="wait">
         <motion.span
           key={currentIndex}
@@ -62,7 +62,7 @@ const HeroBanner = () => {
           </motion.h1>
 
           <motion.div
-            className="text-xl md:text-2xl text-gray-800 mb-8"
+            className="text-xl md:text-2xl text-gray-800 mb-12"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.2 }}
@@ -95,43 +95,33 @@ const HeroBanner = () => {
           </motion.div>
 
           <motion.div
-            className="mt-12 flex items-center"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.6 }}
-          >
-            <div className="flex -space-x-4">
-              {[1, 2, 3, 4,5].map((i) => (
-                <motion.img
-                  key={i}
-                  // src={`/placeholder.svg?height=100&width=100&query=professional headshot of doctor ${i}`}
-                  src={`/speakers/speaker${i}.jpg`}
-                  alt={`Speaker ${i}`}
-                  className="w-12 h-12 rounded-full border-2 border-white"
-                  initial={{ opacity: 0, x: -10 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.5, delay: 0.6 + i * 0.1 }}
-                />
-              ))}
-            </div>
-            <p className="ml-4 text-gray-1000">
-              <span className="font-semibold">5 Expert Speakers from Sept 2025 - Feb 2026</span>
-            </p>
-            {/* <div className="flex items-center gap-2 mt-1">
-        <span className="text-sm md:text-base text-gray-700">Sponsored by</span>
-        <img
-          src="/logos/nfh-logo.png"
-          alt="NFH Logo"
-          className="h-6 md:h-7 object-contain"
-        />
-        <span className="text-sm text-gray-400">×</span>
-        <img
-          src="/logos/vitazan-logo.png"
-          alt="Vitazan Logo"
-          className="h-6 md:h-7 object-contain"
-        />
-      </div> */}
-          </motion.div>
+  className="mt-12 flex flex-col sm:flex-row items-center sm:items-start sm:space-x-4 text-center sm:text-left"
+  initial={{ opacity: 0, y: 20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.7, delay: 0.6 }}
+>
+  <div className="flex justify-center sm:justify-start -space-x-4 mb-4 sm:mb-0">
+    {[1, 2, 3, 4, 5].map((i) => (
+      <motion.img
+        key={i}
+        src={`/speakers/speaker${i}.jpg`}
+        alt={`Speaker ${i}`}
+        className="w-12 h-12 rounded-full border-2 border-white"
+        initial={{ opacity: 0, x: -10 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.5, delay: 0.6 + i * 0.1 }}
+      />
+    ))}
+  </div>
+
+  <p className="text-gray-800 font-medium text-sm sm:text-base">
+    <span className="font-semibold block sm:inline">
+      5 Expert Speakers from Sept 2025 – Feb 2026
+    </span>
+  </p>
+</motion.div>
+
+
             <motion.div
   className="mt-4 ml-0 flex items-center gap-3 text-gray-800 text-base md:text-lg"
   initial={{ opacity: 0, y: 10 }}
