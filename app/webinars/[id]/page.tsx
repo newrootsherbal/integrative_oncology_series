@@ -240,18 +240,18 @@ export default function WebinarPage({ params }: { params: { id: string } }) {
   return (
     <main className="min-h-screen">
       {/* Top Section */}
-      <section className="bg-emerald-50 py-16">
+      <section style={{ backgroundColor: "rgba(144, 183, 62, 0.2)" }} className="bg-emerald-550 py-16">
         <div className="container">
-          <Link href="/#webinars" className="inline-flex items-center text-emerald-600 hover:text-emerald-700 mb-6">
+          <Link href="/#webinars" className="inline-flex items-center text-[#0a3371] hover:text-blue-800 mb-6">
             <ArrowLeft className="h-4 w-4 mr-2" />
             Back to Webinars
           </Link>
           <h1 className="text-3xl md:text-4xl font-bold mb-4 text-gray-800">{webinar.title}</h1>
-          <div className="flex flex-wrap gap-6 mb-6 text-emerald-700">
+          <div className="flex flex-wrap gap-6 mb-6 text-black-900">
             <div className="flex items-center"><Calendar className="h-5 w-5 mr-2" /> {webinar.date}</div>
             <div className="flex items-center"><Clock className="h-5 w-5 mr-2" /> {webinar.time}</div>
           </div>
-          <Button size="lg" className="bg-[#90b73e] hover:opacity-90 text-black">Register Now</Button>
+          <Button size="lg" style={{ backgroundColor: "#90b73e" }} className="bg-[#7d8d5b] hover:opacity-90 text-black">Register Now</Button>
         </div>
       </section>
 
@@ -261,7 +261,7 @@ export default function WebinarPage({ params }: { params: { id: string } }) {
           <button
             onClick={() => setTab("webinar")}
             className={`py-2 text-base font-medium border-b-2 ${
-              tab === "webinar" ? "border-emerald-600 text-emerald-600" : "border-transparent text-gray-500"
+              tab === "webinar" ? "border-[#90b73e] text-[#0a3371]" : "border-transparent text-gray-500"
             }`}
           >
             About the Webinar
@@ -269,7 +269,7 @@ export default function WebinarPage({ params }: { params: { id: string } }) {
           <button
             onClick={() => setTab("speaker")}
             className={`py-2 text-base font-medium border-b-2 ${
-              tab === "speaker" ? "border-emerald-600 text-emerald-600" : "border-transparent text-gray-500"
+              tab === "speaker" ? "border-[#90b73e] text-[#0a3371]" : "border-transparent text-gray-500"
             }`}
           >
             About the Speaker
@@ -292,7 +292,7 @@ export default function WebinarPage({ params }: { params: { id: string } }) {
             <div className="bg-gray-50 p-6 rounded-lg">
               <h3 className="text-xl font-bold mb-4 text-gray-800">Registration Details</h3>
               <ul className="space-y-3 text-gray-600 mb-6">
-                <li><strong>Cost:</strong> <span className="text-emerald-600 font-bold">FREE</span></li>
+                <li><strong>Cost:</strong> <span className="text-[#90b73e] font-bold">FREE</span></li>
                 <li><strong>Who can attend:</strong> All interested in integrative oncology</li>
                 <li><strong>Format:</strong> Live webinar with Q&A + 90-day access</li>
               </ul>
@@ -302,7 +302,7 @@ export default function WebinarPage({ params }: { params: { id: string } }) {
         )}
 
         {tab === "speaker" && speaker && (
-  <section className="bg-white p-6 rounded-xl shadow-lg">
+  <section className="bg-white p-6 rounded-xl shadow-md">
     {/* <h2 className="text-3xl font-bold mb-8 text-gray-800 text-center">
       Meet the Speaker
     </h2> */}

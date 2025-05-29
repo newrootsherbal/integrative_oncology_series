@@ -7,6 +7,7 @@ import { Calendar, Clock, ChevronRight } from "lucide-react"
 import { webinars, getSpeakerByWebinarId } from "@/lib/data"
 import { motion } from "framer-motion"
 
+
 const WebinarList = () => {
   return (
     <section id="webinars" className="bg-gray-50 py-16 md:py-24">
@@ -40,13 +41,17 @@ const WebinarList = () => {
                   <div className="grid grid-cols-1 md:grid-cols-3 h-full">
                     {/* Speaker Image Column */}
                     {speaker && (
-                      <div className="md:col-span-1 bg-emerald-50 flex items-center justify-center p-4">
+                      
+                      <div style={{ backgroundColor: "rgba(144, 183, 62, 0.4)" }} // 80% opacity
+ className="md:col-span-1 bg-emerald-50 flex items-center justify-center p-4">
                         <div className="relative w-full aspect-square max-w-[180px] overflow-hidden rounded-full border-4 border-white shadow-md">
+                          <Link href={`/webinars/${webinar.id}`} className="flex items-center">
                           <img
                             src={speaker.image || "/placeholder.svg"}
                             alt={speaker.name}
                             className="w-full h-full object-cover"
                           />
+                          </Link>
                         </div>
                       </div>
                     )}
@@ -54,7 +59,7 @@ const WebinarList = () => {
                     {/* Webinar Content Column */}
                     <div className="md:col-span-2 flex flex-col h-full">
                       <CardHeader className="pb-2">
-                        <div className="flex flex-wrap gap-4 text-emerald-700 mb-2">
+                        <div  className="flex flex-wrap gap-4 text-black mb-2">
                           <div className="flex items-center space-x-2">
                             <Calendar className="h-4 w-4" />
                             <span className="text-sm font-medium">{webinar.date}</span>
@@ -67,15 +72,19 @@ const WebinarList = () => {
                       </CardHeader>
 
                       <CardContent className="flex-grow pt-2">
-                        <h3 className="text-xl font-bold mb-2 text-gray-800">{webinar.title}</h3>
+                        <Link href={`/webinars/${webinar.id}`} className="flex items-center">
+                        <h3 className="text-xl hover:text-gray-950 font-bold mb-2 text-[#0a3371]">{webinar.title}</h3>
+                        </Link>
                         <p className="text-gray-600 mb-4">{webinar.shortDescription}</p>
 
                         {speaker && (
                           <div className="mt-4 bg-gray-50 p-4 rounded-lg">
                             <div className="flex flex-col">
-                              <h4 className="font-bold text-gray-800">
+                              <Link href={`/webinars/${webinar.id}`} className="flex items-center">
+                              <h4 className="font-bold text-gray-800 hover:text-blue-950">
                                 {speaker.name}, {speaker.credentials}
                               </h4>
+                              </Link>
                               {/* <p className="text-emerald-600 text-sm font-medium mb-2">{speaker.title}</p> */}
                               <p className="text-sm text-gray-600 line-clamp-2">{speaker.bio}</p>
                               {/* <p className="text-xs text-emerald-700 mt-2 font-medium">Research: {speaker.research}</p> */}
@@ -90,7 +99,8 @@ const WebinarList = () => {
                             Details <ChevronRight className="ml-1 h-4 w-4" />
                           </Link>
                         </Button>
-                        <Button className="bg-emerald-600 hover:bg-emerald-700">Register Now</Button>
+                        <Button style={{ backgroundColor: "rgba(144, 183, 62, 0.8)" }} // 80% opacity
+ className= "hover:text-gray-50 text-black">Register Now</Button>
                       </CardFooter>
                     </div>
                   </div>

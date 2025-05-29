@@ -72,7 +72,7 @@ const WebinarPreview = () => {
                         Details <ChevronRight className="ml-1 h-4 w-4" />
                       </Link>
                     </Button>
-                    <Button className="bg-emerald-600 hover:bg-emerald-700">Register</Button>
+                    <Button className="bg-[#90b73e]-100 hover:bg-emerald-700">Register</Button>
                   </CardFooter>
                 </Card>
               </motion.div>
