@@ -42,7 +42,7 @@ const WebinarList = () => {
                     {/* Speaker Image Column */}
                     {speaker && (
                       
-                      <div style={{ backgroundColor: "rgba(144, 183, 62, 0.4)" }} // 80% opacity
+                      <div style={{ backgroundColor: "rgba(144, 183, 62, 0.2)" }} // 80% opacity
  className="md:col-span-1 bg-emerald-50 flex items-center justify-center p-4">
                         <div className="relative w-full aspect-square max-w-[180px] overflow-hidden rounded-full border-4 border-white shadow-md">
                           <Link href={`/webinars/${webinar.id}`} className="flex items-center">
