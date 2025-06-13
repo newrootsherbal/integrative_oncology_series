@@ -99,8 +99,13 @@ const WebinarList = () => {
                             Details <ChevronRight className="ml-1 h-4 w-4" />
                           </Link>
                         </Button>
-                        <Button style={{ backgroundColor: "rgba(144, 183, 62, 0.8)" }} // 80% opacity
- className= "hover:text-gray-50 text-black">Register Now</Button>
+                        
+                        <Button style={{ backgroundColor: "rgba(144, 183, 62, 0.8)" }}   className= "hover:text-gray-50 text-black"> 
+                          <a href={webinar.registrationLink} target="_blank" rel="noopener noreferrer">
+                       Register Now
+                          </a>
+                        </Button>
+
                       </CardFooter>
                     </div>
                   </div>
